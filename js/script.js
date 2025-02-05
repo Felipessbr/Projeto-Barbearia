@@ -1,6 +1,3 @@
-let btnMenu = document.getElementById("btn-menu");
-let menu = document.getElementById("menu-mobile");
-let overlay = document.getElementById("overley-menu");
 const slideContainer = document.querySelector(".paginas-slide");
 
 // Duplicar dinamicamente os itens do carrossel

@@ -29,9 +29,32 @@
     display: flex;
     flex-direction: column;
   }
-  
-  .logo img {
-    position: relative;
+  .footer-container {
+    padding: 0 15px;
+  }
+
+  .footer-top, .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-logo {
+    text-align: center;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .footer-social {
+    gap: 10px;
+  }
+
+  .footer-contact p, .footer-info p {
+    font-size: 12px;
   }
   
 }
@@ -41,9 +64,6 @@
     display: none;
   }
 
-  .logo img {
-    position: relative;
-  }
   .services-grid {
     display: flex;
     flex-direction: column;
@@ -53,4 +73,16 @@
   .card {
     width: 100%;
   }
+  .footer-links a {
+    font-size: 14px;
+  }
+
+  .social-icon {
+    font-size: 18px;
+  }
+
+  .footer-contact p {
+    font-size: 12px;
+  }
 }
+
