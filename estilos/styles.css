@@ -234,7 +234,7 @@
   }
   
   .menu-mobile {
-    width: 70%;
+    max-width: 70vw;
   }
 } /* Hero Section */
   #hero {
@@ -248,7 +248,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     padding: 2rem;
-    position: relative; /* Para garantir que o pseudo-elemento seja posicionado corretamente */
+    position: relative;
 }
 
 
