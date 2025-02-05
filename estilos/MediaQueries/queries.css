@@ -56,24 +56,3 @@
     width: 100%;
   }
 }
-
-
-.footer {
-  text-align: center;
-  padding: 20px 0;
-  font-size: 0.9rem;
-}
-
-.footer a {
-  text-decoration: none;
-  color: #a67c52;
-  margin: 0 5px;
-}
-
-.footer a:hover {
-  color: #8c623d;
-}
-
-section .setor-sobre {
-  min-height: 50vh;
-}
