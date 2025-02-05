@@ -85,7 +85,9 @@
     font-size: 12px;
   }
 }
-@media (orientation: portrait) {
-  
+@media (orientation: landscape) {
+  #services{
+    padding: 20px 8%;
+  }
 }
 
