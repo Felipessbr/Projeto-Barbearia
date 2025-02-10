@@ -81,7 +81,7 @@ revelar.reveal('.title-1',{
 
 revelar.reveal('.card-1',{
   duration: 800,
-  distance: '90px',
+  distance: '15px',
   delay: 200,
   origin: 'left'
 })
@@ -93,14 +93,14 @@ revelar.reveal('.card-2',{
 })
 revelar.reveal('.card-3',{
   duration: 800,
-  distance: '90px',
+  distance: '15px',
   delay:200,
   origin: 'left'
 
 })
 revelar.reveal('.card-4',{
   duration: 800,
-  distance: '90px',
+  distance: '20px',
   delay:200,
   origin: 'right'
 
@@ -200,7 +200,7 @@ revelar.reveal('.evelope',{
 })
 revelar.reveal('.online',{
   duration: 1000,
-  distance: '50px',
+  distance: '15px',
   delay:200,
   origin: 'right'
 
