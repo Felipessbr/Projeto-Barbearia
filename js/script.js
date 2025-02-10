@@ -9,35 +9,40 @@ function duplicarItens(slide) {
 }
 
 duplicarItens(slideContainer);
+class MobileMenu {
+  constructor() {
+    this.menu = document.querySelector('.menu-mobile');
+    this.openBtn = document.querySelector('.btn-abrir-menu');
+    this.closeBtn = document.querySelector('.btn-fechar');
+    this.overlay = document.querySelector('.overley-menu');
+    this.links = document.querySelectorAll('.menu-link, .social-icon');
 
-const btnAbrirMenu = document.querySelector(".btn-abrir-menu");
-const menuMobile = document.querySelector(".menu-mobile");
-const overlayMenu = document.querySelector(".overley-menu");
-const btnFecharMenu = document.querySelector(".btn-fechar");
+    this.init();
+  }
 
-btnAbrirMenu.addEventListener("click", () => {
-    menuMobile.classList.add("abrir-menu");
-    overlayMenu.style.display = "block";
-});
+  toggleMenu(state) {
+    this.menu.setAttribute('aria-hidden', !state);
+    this.overlay.classList.toggle('active', state);
+    document.body.style.overflow = state ? 'hidden' : '';
+  }
 
-btnFecharMenu.addEventListener("click", () => {
-    menuMobile.classList.remove("abrir-menu");
-    overlayMenu.style.display = "none";
-});
-
-overlayMenu.addEventListener("click", () => {
-    menuMobile.classList.remove("abrir-menu");
-    overlayMenu.style.display = "none";
-});
-
-// Fechar menu ao clicar nos links
-document.querySelectorAll('.menu-mobile nav ul li a').forEach(link => {
-    link.addEventListener('click', () => {
-        menuMobile.classList.remove("abrir-menu");
-        overlayMenu.style.display = "none";
+  addEvents() {
+    this.openBtn.addEventListener('click', () => this.toggleMenu(true));
+    this.closeBtn.addEventListener('click', () => this.toggleMenu(false));
+    this.overlay.addEventListener('click', () => this.toggleMenu(false));
+    
+    this.links.forEach(link => {
+      link.addEventListener('click', () => this.toggleMenu(false));
     });
-});
+  }
 
+  init() {
+    this.addEvents();
+  }
+}
+
+// Inicialização
+document.addEventListener('DOMContentLoaded', () => new MobileMenu());
 // Botão Voltar ao Topo
 const btnTop = document.getElementById("btnTop");
 
@@ -81,7 +86,7 @@ revelar.reveal('.title-1',{
 
 revelar.reveal('.card-1',{
   duration: 800,
-  distance: '15px',
+  distance: '16px',
   delay: 200,
   origin: 'left'
 })
@@ -93,7 +98,7 @@ revelar.reveal('.card-2',{
 })
 revelar.reveal('.card-3',{
   duration: 800,
-  distance: '15px',
+  distance: '20px',
   delay:200,
   origin: 'left'
 

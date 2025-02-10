@@ -26,37 +26,39 @@
         </ul>
       </nav>
 
-      <!-- Botão de Abrir Menu Mobile -->
-      <div class="btn-abrir-menu">
-        <i class="fa-solid fa-bars"></i>
-      </div>
+     <!-- Botão de Abrir Menu Mobile -->
+<button class="btn-abrir-menu" aria-label="Abrir menu">
+  <i class="fa-solid fa-bars"></i>
+</button>
 
-      <!-- Menu Mobile -->
-      <div class="menu-mobile" id="menu-mobile">
-        <div class="btn-fechar">
-          <i class="fa-solid fa-xmark"></i>
-        </div>
-        <nav>
-          <ul>
-            <li><a href="#hero">Inicio</a></li>
-            <li><a href="#services">Serviços</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#slide">Galeria</a></li>
-            <li><a href="#form">Contato</a></li>
-          </ul>
-          
-          <!-- Adicione esta nova seção -->
-          <div class="redes-sociais-mobile">
-            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/felipe-soares-dev1" target="_blank" class="social-icon">
-              <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://w.app/ioj4rr" class="social-icon">
-              <i class="fab fa-whatsapp"></i>
-            </a>
-          </div>
-        </nav>
-      </div>
+<!-- Menu Mobile -->
+<div class="menu-mobile" id="menu-mobile" aria-hidden="true">
+  <div class="menu-header">
+    <button class="btn-fechar" aria-label="Fechar menu">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+  </div>
+  
+  <nav class="menu-content">
+    <ul class="menu-links">
+      <li><a href="#hero" class="menu-link">Inicio</a></li>
+      <li><a href="#services" class="menu-link">Serviços</a></li>
+      <li><a href="#sobre" class="menu-link">Sobre</a></li>
+      <li><a href="#slide" class="menu-link">Galeria</a></li>
+      <li><a href="#form" class="menu-link">Contato</a></li>
+    </ul>
+
+    <div class="redes-sociais-mobile">
+      <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/felipe-soares-dev1" target="_blank" class="social-icon" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://w.app/ioj4rr" class="social-icon" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+  </nav>
+</div>
     </header>
 
     <!-- Overlay do Menu Mobile -->
